@@ -43,7 +43,7 @@ def alignment_length(file):
 		for line in multi_fasta:
 			if(re.search('^[ATGCN]',line)):
 				DNA = line.rstrip('\n')
-				alig_len = (len(DNA)-1)
+				alig_len = (len(DNA))
 				break
 
 	return alig_len
